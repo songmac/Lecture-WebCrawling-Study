@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table Example</title>
+</head>
+<body>
+    <!-- 기본 테이블 예시 -->
+    <h2>기본 테이블</h2>
+    <table border="1">
+      <tr>
+        <td>표1</td>
+        <td>표2</td>
+      </tr>
+      <tr>
+        <td>표3</td>
+        <td>표4</td>
+      </tr>
+    </table>
+
+    <!-- 테이블 헤더와 바디 나누기 -->
+    <h2>테이블 헤더와 바디 나누기</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>이동욱</td>
+          <td>34</td>
+        </tr>
+        <tr>
+          <td>홍길동</td>
+          <td>23</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 셀 병합 (열 합치기) -->
+    <h2>셀 병합 (열 합치기)</h2>
+    <table border="1">
+      <tr>
+        <td colspan="2">표1</td>
+      </tr>
+      <tr>
+        <td>표2</td>
+        <td>표3</td>
+      </tr>
+    </table>
+
+    <!-- 셀 병합 (행 합치기) -->
+    <h2>셀 병합 (행 합치기)</h2>
+    <table border="1">
+      <tr>
+        <td rowspan="2">표1</td>
+        <td>표2</td>
+      </tr>
+      <tr>
+        <td>표3</td>
+      </tr>
+    </table>
+</body>
+</html>
