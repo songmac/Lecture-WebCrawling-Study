@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지 실습</title>
+    <style>
+        /* CSS for ID */
+        #header {
+            background-color: #f4a261;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* CSS for CLASS */
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #264653;
+        }
+
+        /* Responsive Image */
+        .responsive-img {
+            width: 50%; /* 이미지 크기를 절반으로 줄임 */
+            height: auto;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with ID -->
+    <div id="header">
+        웹페이지 실습
+    </div>
+
+    <!-- Navigation Menu with CLASS -->
+    <ul class="menu">
+        <li><a href="#section1">소개</a></li>
+        <li><a href="#section2">이미지</a></li>
+        <li><a href="#section3">리스트</a></li>
+        <li><a href="#section4">테이블</a></li>
+    </ul>
+
+    <!-- Sections -->
+    <div id="section1">
+        <h2>소개</h2>
+        <p>이 페이지는 기본적인 HTML 태그와 CSS를 사용하는 방법을 배우기 위한 실습 페이지입니다.</p>
+        <p>하이퍼텍스트 <a href="http://127.0.0.1:5500/main_article.html" target="_blank">예제 링크</a>를 클릭하여 다른 페이지로 이동해보세요.</p>
+    </div>
+
+    <div id="section2">
+        <h2>이미지</h2>
+        <img src="https://mblogthumb-phinf.pstatic.net/MjAyMjAyMjdfMjEy/MDAxNjQ1OTU5NjgwOTIz.1iaVeL5KcHRnE3PLNlDbXz10ze8aYt86KhgkeOqc-TQg.8bJlXyHHpNqCHpe6-xgpEMMUymBzE8kQ1BcZw5BEQJAg.PNG.windangelic/hyl.png?type=w800" alt="웹페이지 구성 요소" class="responsive-img">
+    </div>
+
+    <div id="section3">
+        <h2>리스트</h2>
+        <h3>순서가 있는 항목</h3>
+        <ol>
+            <li>아침</li>
+            <li>점심</li>
+            <li>저녁</li>
+        </ol>
+        <h3>순서가 없는 항목</h3>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>메론</li>
+        </ul>
+    </div>
+
+    <div id="section4">
+        <h2>테이블</h2>
+        <style>
+            table {
+                width: 50%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        <table>
+            <thead>
+                <tr>
+                    <th>웹페이지 구성요소</th>
+                    <th>정의</th>
+                    <th>특징</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>HTML</th>
+                    <td>웹 페이지의 구조를 정의하는 언어</td>
+                    <td>태그를 사용하여 콘텐츠 구성</td>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <td>웹 페이지의 스타일을 정의하는 언어</td>
+                    <td>디자인 및 레이아웃 조정</td>
+                </tr>
+                <tr>
+                    <th>JavaScript</th>
+                    <td>웹 페이지의 동작을 정의하는 언어</td>
+                    <td>인터랙티브 기능 추가</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
